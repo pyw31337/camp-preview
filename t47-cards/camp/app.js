@@ -9,7 +9,7 @@ const APP_BASE = new URL(MOD_ROOT, import.meta.url).pathname;
 const IS_SUBDIR = false;
 const ASSETS_BASE = "/camp-preview/camp/";
 const DATA = "/camp-preview/camp/explore/data/";
-const MEDIA = "/camp-preview/camp/media/";
+const MEDIA = "https://pyw31337.github.io/camp/media/";
 // 사진 파일(webp)만 따로 둔 저장소(Cloudflare R2, 2026-10-30 소유자 결정 ⓒ)가 있으면 그 주소에서 받는다.
 // 배포가 index.html의 <meta name="media-base">에 공개 주소를 넣는다. 비어 있으면 지금처럼 Pages의 /media/.
 // 목록 파일(cards/index.json 등)은 늘 Pages에서 받는다(다른 출처 fetch에 CORS가 필요 없게).
